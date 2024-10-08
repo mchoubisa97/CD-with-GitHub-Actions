@@ -1,3 +1,4 @@
-import sys
+import random
+
 def handler(event, context):
-    return 'Hello from AWS Lambda using Python' + sys.version + '!'
+    return random.randint(0, 1000)
